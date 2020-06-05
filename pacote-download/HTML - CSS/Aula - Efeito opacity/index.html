@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 500){
+                    $(".topbar").css({"opacity" : "0"})
+                }else{
+                    $(".topbar").css({"opacity" : "1"})
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="topbar"></div>
+    <section></section>
+    <section></section>
+
+    
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

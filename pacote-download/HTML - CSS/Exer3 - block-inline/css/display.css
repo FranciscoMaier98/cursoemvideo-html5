@@ -1,0 +1,37 @@
+.example{
+    color: #FFF;
+    text-align: justify;  /*O justify n considera a última linha quando justifica*/
+}
+
+.example::after{ /*Aqui é adicionado a linha extra após a classe exemplo, para q se aplique o efeito do justify na linha anterior*/
+    content: 'asdasdasdadadasdasdasdasd';
+    color:black;
+    display:inline-block;
+    width: 100%;
+    background-color: red;
+}
+
+.example-item{
+    width: 25%;
+    height: 150px;
+    display: inline-block; /*dessa forma é possível deixar os objetos alinhados e em formato de bloco*/
+}
+
+.example-item-first{
+    background-color: #FAA116;
+}
+
+.example-item-second{
+    background-color: #57C7C3;
+}
+
+.example-item-third{
+    background-color: #3897D3;
+
+}
+
+/*
+.last_line{
+    display:inline-block;
+    width: 100%;
+}*/

@@ -1,0 +1,106 @@
+/*o float faz o objeto flutuar, por isso o objeto marrom desaparce quando apenas é escrito float:left no bloco violeta
+pois ele fica escondido em baixo. No entanto, o texto nunca é escondido*/
+
+/*
+.primeira{
+    background-color: violet;
+    float:left;
+}
+
+.segunda{
+    background-color: brown;
+}
+article{
+    
+    /*Aqui esconde qualquer elemento que excede o elemento pai, 
+    que no caso é o article. Como a altura é automática,
+}*/
+
+/*-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*No segundo teste, é colocado float:left em ambos os blocos. Fazendo que ambos fiquem lado a lado já q estão flutuando.
+O texto fica do lado dos objetos. Seu bloco fica abaxo dos objetos um e dois, mas como o texto nunca fica escondido pelo float,
+ele fica do lado. É possível observar isso colocando opacity:0 no elementExample.
+*/
+
+
+/*
+.primeira{
+    background-color: violet;
+    float:left;
+}
+
+.segunda{
+    background-color: brown;
+    float:left;
+}
+article{
+
+
+    
+    /*Aqui esconde qualquer elemento que excede o elemento pai, 
+    que no caso é o article. Como a altura é automática,
+}*/
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*No terceiro exemplo, é mostrado que os objetos float não são vistos pelo elemento pai, no caso o article. Para tanto,
+é usado o overflow:hidden. Esse hidden esconde qualquer elemento que excede o elemento pai, que no caso é o article.*/
+
+/*
+.primeira{
+    background-color: violet;
+    float:left;
+}
+
+.segunda{
+    background-color: brown;
+    float: left;
+}
+article{
+    background-color: chartreuse;
+    overflow:hidden;
+    /*Aqui esconde qualquer elemento que excede o elemento pai, 
+    que no caso é o article. Como a altura é automática,
+}*/
+
+/*-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+
+/*No quarto exemplo é mostrado o uso do clear. Ele possui 3 propriedades: right, left e both. Se há algum outro elemento em
+alguma dessas direlções, o elemento passa para a parte de baixo*/
+
+
+
+.primeira{
+    background-color: darkviolet;
+    float:left;
+}
+
+.segunda{
+    background-color: brown;
+    float:right;
+}
+
+
+.elementExample{
+    width:25%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+}
+
+p{
+    clear:both;
+}
+
+
+
+article{
+    background-color: violet;
+    overflow:hidden;
+    /*Aqui esconde qualquer elemento que excede o elemento pai, 
+    que no caso é o article. Como a altura é automática,*/
+}

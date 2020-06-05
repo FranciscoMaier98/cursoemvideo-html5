@@ -1,0 +1,26 @@
+.example{
+    color: #FFF;
+    
+}
+
+.example-item{
+    width: 33.333%;
+    height: 150px;
+    display: block; /*li é display block por padrão*/
+}
+
+.example-item-first{
+    background-color: #FAA116;
+}
+
+.example-item-second{
+    background-color: #57C7C3;
+    margin-left: auto; /*Preenche toda a linha do lado esquerdo do elemento, jogando-o para o canto direito*/
+}
+
+.example-item-third{
+    background-color: #3897D3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
